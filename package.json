@@ -2,20 +2,6 @@
   "name": "react-apollo-typescript",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@types/jest": "23.3.10",
-    "@types/node": "10.12.15",
-    "@types/react": "16.7.17",
-    "@types/react-dom": "16.0.11",
-    "apollo-boost": "^0.1.22",
-    "apollo-client-preset": "^1.0.8",
-    "react": "^16.8.6",
-    "react-apollo": "^2.5.4",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "5.0.0",
-    "react-scripts": "^2.1.8",
-    "typescript": "^3.4.1"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -23,6 +9,27 @@
     "eject": "react-scripts eject",
     "gen:1": "apollo schema:download --endpoint=http://localhost:4000 graphql-schema.json",
     "gen:2": "apollo codegen:generate --localSchemaFile=graphql-schema.json --target=typescript --includes=src/**/*.tsx --tagName=gql --addTypename --globalTypesFile=src/types/graphql-global-types.ts types"
+  },
+  "dependencies": {
+    "apollo-boost": "0.3.1",
+    "apollo-client": "2.5.1",
+    "apollo-client-preset": "^1.0.8",
+    "apollo-link": "^1.2.11",
+    "apollo-link-ws": "^1.0.17",
+    "apollo-utilities": "^1.2.1",
+    "graphql": "0.13.2",
+    "graphql-tag": "2.10.1",
+    "jwt-decode": "2.2.0",
+    "polished": "^3.2.0",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.3",
+    "react-dom": "^16.8.6",
+    "react-modal": "3.8.1",
+    "react-router-dom": "4.4.0-beta.8",
+    "react-scripts": "2.1.8",
+    "subscriptions-transport-ws": "0.9.16",
+    "tachyons": "4.11.1",
+    "typescript": "3.4.1"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,6 +42,10 @@
   ],
   "devDependencies": {
     "@types/graphql": "^14.0.3",
+    "@types/jwt-decode": "2.2.0",
+    "@types/react": "^16.8.12",
+    "@types/react-dom": "^16.8.3",
+    "@types/react-modal": "3.8.1",
     "@types/react-router-dom": "4.3.1",
     "apollo": "^2.8.1"
   }
